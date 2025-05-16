@@ -1,0 +1,59 @@
+:root {
+    --main-orange: #f97f21;
+    --light-orange: #fff5e5;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffbe9;
+    color: #333;
+  }
+  
+  /* Orange text utility */
+  .text-orange {
+    color: var(--main-orange) !important;
+  }
+  
+  /* Orange background utility */
+  .bg-orange {
+    background-color: var(--main-orange) !important;
+  }
+  
+  /* Orange button style */
+  .btn-orange {
+    background-color: var(--main-orange);
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-orange:hover {
+    background-color: #e96f10;
+  }
+  
+  /* Navbar link styling */
+  .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: var(--main-orange);
+    text-decoration: underline;
+  }
+  
+  /* Card hover effect */
+  .card-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer styling */
+  footer {
+    font-size: 0.9rem;
+    background-color: var(--light-orange);
+  }
+  
