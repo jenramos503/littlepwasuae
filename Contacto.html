@@ -80,8 +80,8 @@
       <!-- Form -->
       <div class="col-lg-6 mb-4">
         <div class="form-box">
-          <form>
-            <div class="mb-3">
+          <form action="https://formspree.io/f/mwpoyydv" method="POST">
+              <div class="mb-3">
               <input type="text" class="form-control" placeholder="Name" required>
             </div>
             <div class="mb-3">
@@ -95,8 +95,9 @@
             </div>
             <div class="mb-3 type-buttons">
               <label class="me-2">Type of pet:</label>
-              <button type="button" class="btn btn-outline-secondary btn-sm">Dog</button>
-              <button type="button" class="btn btn-outline-secondary btn-sm">Cat</button>
+              <input type="hidden" name="petType" id="petType">
+              <button type="button" onclick="setPetType('Dog')" class="btn btn-outline-secondary btn-sm">Dog</button>
+              <button type="button" onclick="setPetType('Cat')" class="btn btn-outline-secondary btn-sm">Cat</button>
             </div>
             <div class="mb-3">
               <input type="number" class="form-control" placeholder="Number of pets">
@@ -106,6 +107,12 @@
             </div>
             <button type="submit" class="btn btn-orange w-100">Submit</button>
           </form>
+ 
+          <script>
+              function setPetType(pet) {
+              document.getElementById('petType').value = pet;
+                               }
+          </script>
         </div>
       </div>
 
